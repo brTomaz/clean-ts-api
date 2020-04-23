@@ -13,6 +13,8 @@
     "eslint-plugin-promise": "4",
     "eslint-plugin-standard": "4",
     "git-commit-msg-linter": "^2.4.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
     "typescript": "^3.8.3"
   }
 }
