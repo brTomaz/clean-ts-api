@@ -1,5 +1,5 @@
-import config from './jest.config'
+const config = require('./jest.config')
 
 config.testMatch = ['**/*.test.ts']
 
-export default config
+module.exports = config
