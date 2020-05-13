@@ -1,7 +1,6 @@
 {
-  "compileOptions": {
+  "compilerOptions": {
     "outDir": "./dist",
-    "allowSyntheticDefaultImports": true, 
     "esModuleInterop": true,
     "module": "commonjs",
     "target": "es2019",
