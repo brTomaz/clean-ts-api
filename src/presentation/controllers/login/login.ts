@@ -9,7 +9,7 @@ import {
   serverError,
   unauthorizedError,
   ok
-} from '../../helpers/http-helper'
+} from '../../helpers/http/http-helper'
 
 import { Validation } from '../login/login-protocols'
 

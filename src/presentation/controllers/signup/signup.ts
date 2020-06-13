@@ -1,4 +1,4 @@
-import { badRequest, serverError, created } from '../../helpers/http-helper'
+import { badRequest, serverError, created } from '../../helpers/http/http-helper'
 import {
   AddAccount,
   Controller,
