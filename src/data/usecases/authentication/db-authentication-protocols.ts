@@ -1,5 +1,5 @@
-export * from '../../protocols/db/load-account-by-email-repository'
-export * from '../../protocols/db/update-access-token-repository'
+export * from '../../protocols/db/account/load-account-by-email-repository'
+export * from '../../protocols/db/account/update-access-token-repository'
 export * from '../../protocols/cryptography/hash-comparator'
 export * from '../../protocols/cryptography/encrypter'
 export * from '../../../domain/models/account'

@@ -1,4 +1,4 @@
-import { LoginController } from './login'
+import { LoginController } from './login-controller'
 import {
   badRequest,
   serverError,
@@ -10,7 +10,7 @@ import {
   HttpRequest,
   Authentication,
   Validation
-} from './login-protocols'
+} from './login-controller-protocols'
 import { AuthenticationModel } from '../../../domain/usecases/authentication'
 
 const makeValidation = (): Validation => {
