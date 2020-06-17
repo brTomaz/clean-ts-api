@@ -3,11 +3,10 @@ import { EmailValidator } from '../../controllers/signup/signup-controller-proto
 import { InvalidParamError } from '../../errors'
 
 export class EmailValidation implements Validation {
-  constructor (private readonly fieldName: string,
-    private readonly emailValidator: EmailValidator) {
-    this.fieldName = fieldName
-    this.emailValidator = emailValidator
-  }
+  constructor (
+    private readonly fieldName: string,
+    private readonly emailValidator: EmailValidator
+  ) {}
 
   validate (input: any): Error {
     if (!this.emailValidator.isValid(input[this.fieldName])) {
