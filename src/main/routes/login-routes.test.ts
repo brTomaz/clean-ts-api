@@ -21,7 +21,7 @@ describe('Login Routes', () => {
   })
 
   describe('POST /signup', () => {
-    test('Should return 201 on signup', async () => {
+    test('Should return 200 on signup', async () => {
       await request(app)
         .post('/api/signup')
         .send({
@@ -30,7 +30,7 @@ describe('Login Routes', () => {
           password: 'any_password',
           passwordConfirmation: 'any_password'
         })
-        .expect(201)
+        .expect(200)
     })
   })
 
