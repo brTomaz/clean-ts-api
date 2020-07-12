@@ -24,7 +24,7 @@ export class AddSurveyController implements Controller {
       if (validationError) {
         return badRequest(validationError)
       }
-      await this.addSurvey.add({ question, answers })
+      await this.addSurvey.add({ question, answers, date: new Date() })
       return noContent()
     } catch (error) {
       return serverError(error)

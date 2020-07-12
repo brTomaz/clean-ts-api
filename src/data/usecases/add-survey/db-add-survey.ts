@@ -9,6 +9,6 @@ export class DbAddSurvey implements AddSurvey {
 
   async add (surveyData: AddSurveyModel): Promise<void> {
     const { question, answers } = surveyData
-    await this.addSurveyRepository.add({ question, answers })
+    await this.addSurveyRepository.add({ question, answers, date: new Date() })
   }
 }
