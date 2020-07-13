@@ -6,7 +6,7 @@ export class DbLoadSurveys implements LoadSurveys {
   constructor (private readonly loadSurveys: LoadSurveysRepository) {}
 
   async load (): Promise<SurveyModel[]> {
-    await this.loadSurveys.loadAll()
-    return []
+    const surveys = await this.loadSurveys.loadAll()
+    return surveys
   }
 }
