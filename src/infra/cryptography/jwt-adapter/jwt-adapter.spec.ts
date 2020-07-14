@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { JwtAdapter } from './jwt-adapter'
 
-interface SutTypes {
+type SutTypes = {
   sut: JwtAdapter
 }
 
