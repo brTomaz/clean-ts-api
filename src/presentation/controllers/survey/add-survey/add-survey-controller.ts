@@ -8,8 +8,8 @@ import {
   badRequest,
   serverError,
   noContent
-} from '../../../helpers/http/http-helper'
-import { AddSurvey } from '../../../../domain/usecases/add-survey'
+} from '@/presentation/helpers/http/http-helper'
+import { AddSurvey } from '@/domain/usecases/add-survey'
 
 export class AddSurveyController implements Controller {
   constructor (

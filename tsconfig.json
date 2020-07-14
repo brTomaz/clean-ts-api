@@ -5,8 +5,11 @@
     "module": "commonjs",
     "target": "es2019",
     "sourceMap": true,
-    "rootDir": "src"
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
   },
-  "include": ["src"],
-  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+  "include": ["src"]
 }
