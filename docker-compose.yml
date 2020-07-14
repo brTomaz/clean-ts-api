@@ -14,6 +14,8 @@ services:
     working_dir: /usr/src/clean-ts-api
     restart: always
     command: bash -c "yarn install --only=prod && yarn debug"
+    environment: 
+      - MONGO_URL=mongodb://mongo:27017/clean-ts-api
     volumes: 
       - ./dist/:/usr/src/clean-ts-api/dist/
       - ./package.json:/usr/src/clean-ts-api/package.json
