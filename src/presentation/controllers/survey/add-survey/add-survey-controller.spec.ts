@@ -5,11 +5,11 @@ import {
   serverError,
   badRequest,
   noContent
-} from '../../../helpers/http/http-helper'
+} from '@/presentation/helpers/http/http-helper'
 import {
   AddSurvey,
   AddSurveyModel
-} from '../../../../domain/usecases/add-survey'
+} from '@/domain/usecases/add-survey'
 
 const makeFakeRequest = (): HttpRequest => ({
   body: {

@@ -4,7 +4,7 @@ import {
   LoadSurveys,
   SurveyModel
 } from './load-surveys-controller-protocols'
-import { ok, serverError, noContent } from '../../../helpers/http/http-helper'
+import { ok, serverError, noContent } from '@/presentation/helpers/http/http-helper'
 
 const makeFakeSurveys = (): SurveyModel[] => {
   return [{

@@ -1,6 +1,7 @@
 import 'dotenv/config'
-import env from '../main/config/env'
-import { MongoHelper } from '../infra/db/mongodb/helpers/mongo-helper'
+import 'module-alias/register'
+import env from '@/main/config/env'
+import { MongoHelper } from '@/infra/db/mongodb/helpers/mongo-helper'
 
 MongoHelper.connect(env.mongoUrl).then(async () => {
   const app = (await import('./config/app')).default
